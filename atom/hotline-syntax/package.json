@@ -1,0 +1,58 @@
+{
+  "_args": [
+    [
+      {
+        "raw": "/tmp/d-11791-27448-666kc5.902w4/package.tgz",
+        "scope": null,
+        "escapedName": null,
+        "name": null,
+        "rawSpec": "/tmp/d-11791-27448-666kc5.902w4/package.tgz",
+        "spec": "/tmp/d-11791-27448-666kc5.902w4/package.tgz",
+        "type": "local"
+      },
+      "/tmp/apm-install-dir-11791-27448-18scwap.ipwe"
+    ]
+  ],
+  "_id": "hotline-syntax@0.3.3",
+  "_inCache": true,
+  "_location": "/hotline-syntax",
+  "_phantomChildren": {},
+  "_requested": {
+    "raw": "/tmp/d-11791-27448-666kc5.902w4/package.tgz",
+    "scope": null,
+    "escapedName": null,
+    "name": null,
+    "rawSpec": "/tmp/d-11791-27448-666kc5.902w4/package.tgz",
+    "spec": "/tmp/d-11791-27448-666kc5.902w4/package.tgz",
+    "type": "local"
+  },
+  "_requiredBy": [
+    "#USER"
+  ],
+  "dependencies": {},
+  "description": "Based on miami-nights-syntax, customized to match Hotline linux theme.",
+  "devDependencies": {},
+  "engines": {
+    "atom": ">=1.0.0 <2.0.0"
+  },
+  "homepage": "https://github.com/egpavelka/hotline-linux-theme",
+  "license": "MIT",
+  "name": "hotline-syntax",
+  "optionalDependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/egpavelka/hotline-linux-theme.git"
+  },
+  "theme": "syntax",
+  "version": "0.3.3",
+  "_atomModuleCache": {
+    "version": 1,
+    "dependencies": [],
+    "extensions": {
+      ".json": [
+        "package.json"
+      ]
+    },
+    "folders": []
+  }
+}

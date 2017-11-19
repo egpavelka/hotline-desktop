@@ -1,0 +1,30 @@
+[global_config]
+  handle_size = 2
+  tab_position = right
+  title_font = Inconsolata 12
+  title_hide_sizetext = True
+  title_inactive_bg_color = "#1d2026"
+  title_inactive_fg_color = "#acbbcd"
+  title_receive_bg_color = "#1d2026"
+  title_receive_fg_color = "#e8e6df"
+  title_transmit_bg_color = "#1d2026"
+  title_transmit_fg_color = "#e8e6df"
+  title_use_system_font = False
+[keybindings]
+[layouts]
+  [[default]]
+    [[[child1]]]
+      parent = window0
+      type = Terminal
+    [[[window0]]]
+      parent = ""
+      type = Window
+[plugins]
+[profiles]
+  [[default]]
+    background_color = "#1d2026"
+    cursor_color = "#aaaaaa"
+    font = Inconsolata 12
+    foreground_color = "#e8e6df"
+    palette = "#323947:#c30047:#00b094:#ff8a00:#087ec6:#bd00ce:#9bc8ff:#acbbcd:#5b626f:#ff0164:#e7ff3a:#fec64a:#00e1ff:#ffa9b8:#82e6c2:#bf3f3f"
+    use_system_font = False
