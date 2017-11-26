@@ -1,8 +1,3 @@
-// Colors: Mix Base16 Tomorrow with Theme hue -----------------------------------
-@syntax-mix-base:    hsl(@syntax-hue, 100%, 66%); // #0038a8
-@syntax-mix-grey:    12%;
-@syntax-mix-color:   0%;
-
 @neon-dark-base-1:   #171717;
 @neon-dark-base-2:   #1d2026;
 @neon-purple-base-1: #0f041f;
@@ -10,53 +5,32 @@
 
 @black:         @neon-dark-base-1;
 @black-grey:    @neon-dark-base-2;
-@darkest-grey:  mix( @syntax-mix-base, #323947, @syntax-mix-grey);
-@dark-grey:     mix( @syntax-mix-base, #5b626f, @syntax-mix-grey);
-@grey:          mix( @syntax-mix-base, #838a98, @syntax-mix-grey);
-@light-grey:    mix( @syntax-mix-base, #acbbcd, @syntax-mix-grey);
-@lightest-grey: mix( @syntax-mix-base, #e8e6df, @syntax-mix-grey);
+@darkest-grey:  #323947;
+@dark-grey:     #5b626f;
+@grey:          #838a98;
+@light-grey:    #acbbcd;
+@lightest-grey: #e8e6df;
 
-@cyan:          mix( @syntax-mix-base, #00e1ff, @syntax-mix-color);
-@light-cyan:    mix( @syntax-mix-base, #82e6c2, @syntax-mix-color);
-@lightest-cyan: hsl(178, 23%, 81%); // #9fcecc
-@blue:          mix( @syntax-mix-base, #087ec6, @syntax-mix-color);
-@light-blue:    mix( @syntax-mix-base, #9bc8ff, @syntax-mix-color);
-@purple:        mix( @syntax-mix-base, #35094e, @syntax-mix-color);
-@fuchsia:       mix( @syntax-mix-base, #bd00ce, @syntax-mix-color);
-@pink:          mix( @syntax-mix-base, #ff66b3, @syntax-mix-color);
-@light-pink:    mix( @syntax-mix-base, #ffa9b8, @syntax-mix-color);
-@coral:         mix( @syntax-mix-base, #ff6666, @syntax-mix-color);
-@orange:        mix( @syntax-mix-base, #ff8a00, @syntax-mix-color);
-@light-orange:  mix( @syntax-mix-base, #ffba26, @syntax-mix-color);
-@yellow:        mix( @syntax-mix-base, #c9ff3a, @syntax-mix-color);
-@green:         mix( @syntax-mix-base, #00b094, @syntax-mix-color);
+@cyan:          #00e1ff;
+@light-cyan:    #82e6c2;
+@lightest-cyan: #9fcecc;
 
-// @turquoise: #0198B1;
+@blue:          #087ec6;
+@light-blue:    #9bc8ff;
 
-// Base colors -----------------------------------
-@syntax-hue:          220;
-@syntax-saturation:   24%;
-@syntax-brightness:   15%;
-@syntax-base-accent-color:      @syntax-mix-base;
+@purple:        #35094e;
+@fuchsia:       #bd00ce;
+
+@pink:          #ff66b3;
+@light-pink:    #ffa9b8;
+
+@coral:         #ff6666;
+@orange:        #ff8a00;
+@light-orange:  #ffba26;
+
+@yellow:        #c9ff3a;
+@green:         #00b094;
+
 @syntax-base-background-color:  @black-grey;
-@syntax-base-text-color:        @light-grey;
-@syntax-base-guide-color:       fade(@syntax-base-text-color, 15%);
-@base00: @syntax-base-background-color;
-@base01: rgba(23, 23, 23, 0.79);
-@base02: @dark-grey;
-@base03: @grey;
-@base04: @light-grey;
-@base05: @lightest-cyan;
-@base06: @light-grey;
-@base07: @lightest-grey;
-@base08: @pink;
-@base09: @coral;
-@base0A: @yellow;
-@base0B: @green;
-@base0C: @cyan;
-@base0D: @blue;
-@base0E: @light-pink;
-@base0F: @orange;
-@base11: @cyan;
-@base12: @light-blue;
-@base13: @light-cyan;
+@syntax-base-text-color:        @lightest-grey;
+@syntax-base-guide-color:       @light-grey;

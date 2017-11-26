@@ -13,7 +13,7 @@
       "/tmp/apm-install-dir-11791-27448-18scwap.ipwe"
     ]
   ],
-  "_id": "hotline-syntax@0.3.3",
+  "_id": "hotline-syntax@0.1.0",
   "_inCache": true,
   "_location": "/hotline-syntax",
   "_phantomChildren": {},
@@ -35,16 +35,16 @@
   "engines": {
     "atom": ">=1.0.0 <2.0.0"
   },
-  "homepage": "https://github.com/egpavelka/hotline-linux-theme",
+  "homepage": "https://github.com/egpavelka/hotline-atom-theme",
   "license": "MIT",
   "name": "hotline-syntax",
   "optionalDependencies": {},
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/egpavelka/hotline-linux-theme.git"
+    "url": "git+https://github.com/egpavelka/hotline-atom-theme.git"
   },
   "theme": "syntax",
-  "version": "0.3.3",
+  "version": "0.1.0",
   "_atomModuleCache": {
     "version": 1,
     "dependencies": [],

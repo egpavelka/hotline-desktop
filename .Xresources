@@ -1,0 +1,7 @@
+! In case rofi forgets to read colors in its own config
+rofi.color-window: argb:d2000000, #bc00de, argb:95bc00de
+
+rofi.color-normal: #171717, #00e1ff, #1d2026, #bc00de, #e8e6df
+rofi.color-active: #171717, #acbbcd, #1d2026, #bc00de, #acbbcd
+rofi.color-urgent: #171717, #bc00de, #1d2026, #bc00de, #ffa9b8
+
