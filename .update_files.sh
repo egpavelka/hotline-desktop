@@ -20,7 +20,7 @@ cp $HOME/.config/terminator/config $DEST/terminal-emulators/terminator/
 cp $HOME/.config/tilda/config_0 $DEST/terminal-emulators/tilda/
 
 # Conky
-cp $HOME/.config/conky/conky.conf $DEST/conky/
+cp -r $HOME/.config/conky/ $DEST/conky
 
 # ROFI
 cp $HOME/.config/rofi/config $DEST/rofi/
