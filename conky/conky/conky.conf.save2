@@ -1,0 +1,162 @@
+-- This is an example configuration for Conky using the Corky Lua
+-- modules. Requires Conky version >=1.10. For an example using the
+-- old (pre-1.10) configuration style please check the Git history.
+
+-- The following is the regular Conky configuration. See the official
+-- documentation for details.
+
+conky.config            	= {
+   background   		= true,
+   update_interval      	= 1,
+   cpu_avg_samples      	= 2,
+   net_avg_samples		= 2,
+   double_buffer        	= true,
+   use_xft              	= true,
+
+   minimum_width        	= 370,
+   minimum_height       	= 300,
+   own_window           	= true,
+   own_window_type		= dock,
+   own_window_argb_visual	= true,
+   own_window_argb_value	= 216,
+   own_window_hints		= 'undecorated,below,sticky,skip_taskbar,skip_pager',
+   border_inner_margin		= 10,
+   border_outer_margin		= 0,
+   alignment = 'bottom_left',
+   gap_x = 30,
+   gap_y = 30,
+   default_color 		= '#e8e6df',
+   own_window_colour		= '#1d2026',
+   font                 	= "Hack:size=9",
+
+   lua_load             	= "lua/corky.lua",
+   lua_startup_hook     	= "startup_hook",
+   lua_shutdown_hook    	= "shutdown_hook",
+   lua_draw_hook_pre    	= "draw_hook_pre",
+   lua_draw_hook_post   	= "draw_hook_post";
+
+};
+
+--[[
+
+   This is the Corky configuration. It is included in a Lua multiline
+   comment, and still using the old syntax. I currently don't see any
+   reason to change this to proper Lua, for the time being this will
+   be the way Corky is configured. Only lines starting with #: will be
+   processed by Corky.
+
+
+   #: include, corky.cache
+   #: include, corky.colors
+   #: include, corky.circles
+   #: include, corky.dcolors
+   #: include, corky.lists
+   #: include, corky.rects
+   #: include, corky.text
+
+   #: color,  background, 0x5b626f
+   #: color,  fixed,      0xE8E6DF
+   #: color,  shade,      0xACBBCD
+   #: color,  aqua,       0x00E1FF
+   #: color,  fuchsia,    0xBD00CE
+   #: dcolor, dynamic,    0x00E1FF, 50, 0x087EC6, 95, 0x087EC6
+   #: dcolor, gradient,   0xBD00CE, 50, 0xFF66B3,     0x35094E
+
+   #: cache, ${cpu},      1, 0, 100
+   #: cache, ${cpu cpu0}, 1, 0, 100
+   #: cache, ${cpu cpu1}, 1, 0, 100
+   #: cache, ${cpu cpu2}, 1, 0, 100
+   #: cache, ${cpu cpu3}, 1, 0, 100
+   #: cache, ${cpu cpu2}, 1, 0, 100
+   #: cache, ${memperc},                1,  0,  100
+   #: cache, ${downspeedf wlp4s0},      1,  0, 7500
+   #: cache, ${upspeedf wlp4s0},	1,  0, 1500
+ 
+
+   #: list, font, Hack, FONT_SLANT_NORMAL, FONT_WEIGHT_BOLD
+   #: list, scale10, 10, 20, 30, 40, 50, 60, 70, 80, 90
+   #: list, scale25, 25, 50, 75
+
+
+   #: text, cpu, 305, 162, font, 9, shade, %4s%%, ${cpu cpu0}
+   #: text, cpu, 335, 162, font, 9, aqua, CPU0
+   #: circle, cpu, ${cpu cpu0}, 80,  220,  60, 3,  90, 180, gradient, background, , ,  0,  20
+   #: rect,   cpu, ${cpu cpu0}, 80,  160, 230, 3,   0,     gradient, background, , , 20, 100
+
+   #: text, cpu, 305, 170, font, 9, shade, %4s%%, ${cpu cpu4}
+   #: text, cpu, 335, 170, font, 9, aqua, CPU4
+   #: circle, cpu, ${cpu cpu4}, 80,  220,  55, 3,  90, 180, dynamic, background, , ,  0,  20
+   #: rect,   cpu, ${cpu cpu4}, 80,  165, 230, 3,  90,      dynamic, background, , , 20, 100
+
+   #: text, cpu, 255, 173, font, 9, shade, %4s%%, ${cpu cpu1}
+   #: text, cpu, 285, 173, font, 9, aqua, CPU1
+   #: circle, cpu, ${cpu cpu1}, 80,  220,  50, 3,  90, 180, gradient, background, , ,  0,  20
+   #: rect,   cpu, ${cpu cpu1}, 80,  170, 180, 3,   0,     gradient, background, , , 20, 100
+
+   #: text, cpu, 205, 183, font, 9, shade, %4s%%, ${cpu cpu2}
+   #: text, cpu, 235, 183, font, 9, aqua, CPU2
+   #: circle, cpu, ${cpu cpu2}, 80,  220,  40, 3,  90, 180, gradient, background, , ,  0,  20
+   #: rect,   cpu, ${cpu cpu2}, 80,  180, 130, 3,   0,     gradient, background, , , 20, 100
+
+   #: text, cpu, 155, 193, font, 9, shade, %4s%%, ${cpu cpu3}
+   #: text, cpu, 185, 193, font, 9, aqua, CPU3
+   #: circle, cpu, ${cpu cpu3}, 80,  220,  30, 3,  90, 180, gradient, background, , ,  0,  20
+   #: rect,   cpu, ${cpu cpu3}, 80,  190,  80, 3,   0,     gradient, background, , , 20, 100
+
+   #: text, cpu, 70, 215, font, 10, fixed, %s, ${time %A}
+   #: text, cpu, 70, 232, font, 12, fixed, %s, ${time %d %B %Y}
+   #: text, cpu, 83, 282, font, 50, fixed, %s, ${time %H:%M}
+
+   #: text,   cpu, 245, 282, font, 10, aqua, %s, NETWORK
+   #: rect,   cpu, ${upspeedf wlp4s0}, 255, 287,  20,  3,  90,       gradient, background, , ,  0,  40
+   #: circle, cpu, ${upspeedf wlp4s0}, 245, 307,  10,  3,   0, 90,   gradient, background, , , 40,  42
+   #: rect,   cpu, ${upspeedf wlp4s0}, 245, 317,  30,  3, 180,       gradient, background, , , 42, 100
+   #: text,   cpu, 200, 320, font, 9, aqua, %s, UP
+   #: rect,   cpu, ${downspeedf wlp4s0}, 275, 287,  40,  3,  90,       gradient, background, , ,  0,  40
+   #: circle, cpu, ${downspeedf wlp4s0}, 265, 327,  10,  3,   0, 90,   gradient, background, , , 40,  42
+   #: rect,   cpu, ${downspeedf wlp4s0}, 265, 337,  30,  3, 180,       gradient, background, , , 42, 100
+   #: text,   cpu, 207, 340, font, 9, aqua, %s, DOWN
+
+   : circle, memperc, ${memperc}, 118, 262, 25, 10, 270, 360, gradient, background
+
+--]]
+
+-- The following is Conky's output. Actual meters are drawn by Corky.
+
+conky.text = [[
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	${color #00e1ff}${goto 20}Name ${goto 200}PID${goto 255}CPU%${goto 310}Mem%${color}
+	${goto 20}${top name 1} ${goto 180}${top pid 1}${goto 235}${top cpu 1}${goto 290}${top mem 1}
+	${goto 20}${top name 2} ${goto 180}${top pid 2}${goto 235}${top cpu 2}${goto 290}${top mem 2}
+	${goto 20}${top name 3} ${goto 180}${top pid 3}${goto 235}${top cpu 3}${goto 290}${top mem 3}
+	${goto 20}${top name 4} ${goto 180}${top pid 4}${goto 235}${top cpu 4}${goto 290}${top mem 4}
+	${goto 20}${top name 5} ${goto 180}${top pid 5}${goto 235}${top cpu 5}${goto 290}${top mem 5}
+]]
