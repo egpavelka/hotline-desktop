@@ -155,27 +155,21 @@ conky.config            	= {
     MEM & TOTAL CPU
    -----------------
 
-   : text,   mem,                     25, 220, font, 9,              shade, %4s%%, ${cpu cpu4}
-   : text,   mem,                     10, 220, font, 9,              fixed, CPU4
-   : circle, mem, ${memperc},           0, 525,  55,  3, 270, 100,  dynamic, background, , ,  0,  20
-   : rect,   mem, ${memperc},          55, 534,  20,  3,  0,        dynamic, background, , , 20, 100
+   #: text,   mem,                     25, 220, font, 9,              shade, %4s%%, ${cpu cpu4}
+   #: text,   mem,                     10, 220, font, 9,              fixed, CPU4
+   #: circle, mem, ${memperc},           0, 525,  55,  3, 270, 100,  dynamic, background, , ,  0,  20
+   #: rect,   mem, ${memperc},          55, 534,  20,  3,  0,        dynamic, background, , , 20, 100
 
-   : text,   cpu,                      35, 545, font, 9,              shade, %s, ${cpu}
-   : text,   cpu,                      35, 575, font, 9,              fixed, %s, ${cpu}
-   : circle, cpu, ${cpu},               0, 525,  45,  3, 270, 120, gradient, background, , ,  0,  20
-   : rect,   cpu, ${cpu},              40, 547,  30,  3,   0,      gradient, background, , , 20, 100
+   #: text,   cpu,                      35, 545, font, 9,              shade, %s, ${cpu}
+   #: text,   cpu,                      35, 575, font, 9,              fixed, %s, ${cpu}
+   #: circle, cpu, ${cpu},               0, 525,  45,  3, 270, 120, gradient, background, , ,  0,  20
+   #: rect,   cpu, ${cpu},              40, 547,  30,  3,   0,      gradient, background, , , 20, 100
 
    ---------
     NETWORK
    ---------
-
-   #: circle, mem, ${upspeedf wlp4s0},   0, 525,  55,  3, 270, 125,  dynamic, background, , ,  0,  20
-   #: rect,   mem, ${upspeedf wlp4s0},  45, 555,  20,  3,  90,       dynamic, background, , , 20, 100
-
-   #: circle, cpu, ${downspeedf wlp4s0}, 0, 525,  45,  3, 270, 140, gradient, background, , ,  0,  20
-   #: rect,   cpu, ${downspeedf wlp4s0},30, 558,  25,  3,  90,      gradient, background, , , 20, 100
          
-   #: text,   cpu,                      24, 606, font, 12,            fixed, NETWORK
+   #: text,   cpu,                      24, 603, font, 11,             shade, NETWORK
 
    #: text,   cpu,                      40, 627, font, 10,             fixed, %s, ${upspeed wlp4s0}
    #: text,   cpu,                      24, 627, font, 10,             shade, UP
