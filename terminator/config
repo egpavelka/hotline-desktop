@@ -1,15 +1,13 @@
 [global_config]
+  dbus = False
   handle_size = 2
   tab_position = right
-  title_font = Inconsolata 12
+  title_font = Hack 11
   title_hide_sizetext = True
   title_inactive_bg_color = "#1d2026"
-  title_inactive_fg_color = "#acbbcd"
+  title_inactive_fg_color = "#aaaaaa"
   title_receive_bg_color = "#1d2026"
-  title_receive_fg_color = "#e8e6df"
   title_transmit_bg_color = "#1d2026"
-  title_transmit_fg_color = "#e8e6df"
-  title_use_system_font = False
 [keybindings]
 [layouts]
   [[default]]
@@ -22,9 +20,15 @@
 [plugins]
 [profiles]
   [[default]]
+    cursor_color = "#aaaaaa"
+    use_theme_colors = True
+  [[babywave]]
+    background_color = "#fafafa"
+    cursor_color = "#aaaaaa"
+    foreground_color = "#0e0e0e"
+    palette = "#ffeff5:#ff86c1:#56f5a3:#e1e364:#3fb2eb:#c76bdb:#74e3da:#707070:#effcff:#fc44b0:#2cde79:#fab237:#307ae3:#9b34a8:#37aab3:#909090"
+  [[hotline]]
     background_color = "#1d2026"
     cursor_color = "#aaaaaa"
-    font = Inconsolata 12
     foreground_color = "#e8e6df"
     palette = "#323947:#c30047:#00b094:#ff8a00:#087ec6:#bd00ce:#9bc8ff:#acbbcd:#5b626f:#ff0164:#e7ff3a:#fec64a:#00e1ff:#ffa9b8:#82e6c2:#bf3f3f"
-    use_system_font = False

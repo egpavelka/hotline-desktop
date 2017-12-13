@@ -1,0 +1,22 @@
+"*":
+  core:
+    disabledPackages: [
+      "webbox-color"
+      "linter-scss-lint"
+    ]
+    telemetryConsent: "no"
+    themes: [
+      "one-dark-ui"
+      "hotline-syntax"
+    ]
+  editor: {}
+  "exception-reporting":
+    userId: "af85fc60-923a-4be0-a7a7-5a4100b31695"
+  linter: {}
+  "linter-rubocop": {}
+  "linter-scss-lint": {}
+  "linter-ui-default":
+    showPanel: true
+  "one-dark-ui": {}
+  welcome:
+    showOnStartup: false

@@ -14,13 +14,13 @@ conky.config            	= {
    use_xft              	= true,
 
    minimum_width        	= 80,
-   minimum_height       	= 400,
+   minimum_height       	= 320,
    own_window           	= true,
    own_window_type		= dock,
    own_window_argb_visual	= true,
    own_window_argb_value	= 0,
    own_window_hints		= 'undecorated,below,sticky,skip_taskbar,skip_pager',
-   border_inner_margin		= 10,
+   border_inner_margin		= 0,
    border_outer_margin		= 0,
    alignment = 'bottom_left',
    gap_x = 0,
@@ -28,7 +28,7 @@ conky.config            	= {
    default_color 		= '#e8e6df',
    font                 	= "Hack Bold:size=9",
 
-   lua_load             	= "lua/corky.lua",
+   lua_load             	= "/home/gigi/.config/conky/lua/corky.lua",
    lua_startup_hook     	= "startup_hook",
    lua_shutdown_hook    	= "shutdown_hook",
    lua_draw_hook_pre    	= "draw_hook_pre",
@@ -118,7 +118,7 @@ conky.config            	= {
     CIRCLE 5 - CALIBRE
    ---------------------
 
-   #: rect,   cpu, ${cpu},       43, 195,  49,  3,   9,           gradient, background, , , 40, 100
+   #: rect,   cpu, ${cpu},       43, 195,  49,  3,   8,           gradient, background, , , 40, 100
    #: circle, cpu, ${cpu},       43, 223,  27,  3,  40, 230,      gradient, background, , ,  0,  40
 
    #: circle, cpu, ${cpu},       43, 223,  20,  3,   0, 360,    background, background, , ,  0, 1
@@ -157,8 +157,9 @@ conky.text = [[
 
 
 
-   ${goto 15}${memgraph 40,100 00E1FF 0038A8}
-   ${voffset 10}
-   ${color #1d2026}${goto 15}${mem}/${memmax} (${memperc}%)
-   ${goto 15}Swap: ${swapperc}%${color}
+
+
+   ${goto 15}${mem}/${memmax} (${memperc}%)
+   ${goto 15}Swap: ${swapperc}%
+   ${goto 15}${voffset 5}${memgraph 25,100 00E1FF 0038A8}
 ]]

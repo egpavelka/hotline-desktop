@@ -12,7 +12,7 @@ rofi.width: 25
 rofi.columns: 1
 
 ! Font to use
-rofi.font: Inconsolata 12
+rofi.font: Hack 12
 
 ! Color scheme for normal row
 rofi.color-normal:  #171717, #00e1ff, #1d2026, #bc00de, #e8e6df
