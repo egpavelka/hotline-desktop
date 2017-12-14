@@ -33,11 +33,11 @@
     ("9102762eedd13ec3c0f4ffd3fbfb3ddd77f30ae905bd96334ddde1abf3a70ace" "5088db10ab3a724f21a5b400b6e788a245f875d43d571587c38c345701ebca98" "4ab603d91b20a81f8468f82f0815ab4d36e1af9ee147e7b5538a404469fc73cc" default)))
  '(package-selected-packages
    (quote
-    (org-mind-map robe anaconda-mode flycheck markdown-preview-mode rubocop rjsx-mode db-pg smartparens org-edna))))
+    (wanderlust coffee-mode sublimity which-key twittering-mode rainbow-mode dired+ scion ghc haskell-emacs haskell-mode org-mind-map robe anaconda-mode flycheck markdown-preview-mode rubocop rjsx-mode db-pg smartparens org-edna))))
 (custom-set-faces
  ;; custom-set-faces was added by Custom.
  ;; If you edit it by hand, you could mess it up, so be careful.
  ;; Your init file should contain only one such instance.
  ;; If there is more than one, they won't work right.
  )
-(autoload 'wl "wl" "Wanderlust" t)
+

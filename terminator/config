@@ -20,9 +20,11 @@
 [plugins]
 [profiles]
   [[default]]
+    background_color = "#1d2026"
     cursor_color = "#aaaaaa"
-    use_theme_colors = True
-  [[babywave]]
+    foreground_color = "#e8e6df"
+    palette = "#323947:#c30047:#00b094:#ff8a00:#087ec6:#bd00ce:#9bc8ff:#acbbcd:#5b626f:#ff0164:#e7ff3a:#fec64a:#00e1ff:#ffa9b8:#82e6c2:#bf3f3f"
+[[babywave]]
     background_color = "#fafafa"
     cursor_color = "#aaaaaa"
     foreground_color = "#0e0e0e"
