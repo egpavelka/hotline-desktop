@@ -5,7 +5,7 @@
 # WARNING: Be sure that xfce4-hotline is the current environment
 # Otherwise the following files will be overwritten:
 # ~/.atom/config.cson
-# ~/.emacs
+# ~/.emacs.d/init.el
 # ~/.config/mc/ini
 # ~/.config/rofi/config
 # ~/.config/terminator/config
@@ -27,7 +27,7 @@ cp $HOME/.config/compiz/compizconfig/hotline.ini $DEST/compiz-reloaded/
 cp -r $HOME/.config/conky/* $DEST/conky/
 
 # Emacs
-cp $HOME/{.emacs,.emacs.d/hotline-theme.el} $DEST/emacs/
+cp -r $HOME/.emacs.d/{init.el,hotline-theme.el,install-packages} $DEST/emacs/
 
 # Emerald
 cp -r $HOME/.emerald/themes/hotline $DEST/emerald/

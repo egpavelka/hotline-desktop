@@ -23,7 +23,7 @@ cp $THEME/compiz-reloaded/hotline.ini $HOME/.config/compiz/compizconfig/
 cp -r $THEME/conky/* $HOME/.config/conky/
 
 # Emacs
-cp $THEME/emacs/hotline-theme.el $HOME/.emacs.d/
+cp $THEME/emacs/.emacs.d/{init.el,hotline.el,install-packages/} $HOME/.emacs.d/
 
 # Emerald
 cp -r $THEME/emerald/hotline $HOME/.emerald/
