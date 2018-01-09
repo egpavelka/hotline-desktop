@@ -36,19 +36,6 @@
 *.color7:       #acbbcd
 *.color15:      #e8e6df
 
-! URxvt config
-URxvt.font: xft:Inconsolata:size=11
-URxvt.internalBorder: 8
-URxvt.pointerBlank: true
-URxvt.saveLines: 10000
-URxvt.scrollBar: False
-
-! Font config
-Xft.antialias: true
-Xft.autohint: false
-Xft.dpi: 96
-Xft.hinting: false
-
 ! ROFI colors
 !
 rofi.color-window: argb:d2000000, #bc00de, argb:95bc00de

@@ -34,6 +34,8 @@ cp -r $HOME/.emerald/themes/hotline $DEST/emerald/
 
 # GTK
 cp -r $HOME/.themes/Hotline* $DEST/gtk/
+cp $HOME/.gtkrc-2.0 $DEST/gtk/
+cp $HOME/.config/gtk-3.0/settings.ini $DEST/gtk/
 
 # Midnight Commander
 # cp $HOME/{.local/share/mc/skins/hotline.ini,.config/mc/ini} $DEST/midnight-commander/
@@ -44,4 +46,8 @@ cp $HOME/.config/rofi/config $DEST/rofi/
 # Terminal
 cp $HOME/.config/tilda/config_0 $DEST/tilda/
 cp $HOME/.config/terminator/config $DEST/terminator/
+
+#######
+# ALT: When XFCE breaks, use a standalone compiz session.
+cp $HOME/.compiz-session $DEST/
 

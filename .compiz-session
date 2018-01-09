@@ -1,0 +1,12 @@
+xbindkeys &
+exec /home/gigi/.config/autostart/xfce4/xfce4-hotline.sh &
+feh --bg-scale /home/gigi/.backgrounds/hotline/retrofuturism.png &
+compiz &
+nm-applet &
+tint2 &
+xfce4-panel &
+conky &
+conky -c /home/gigi/.config/conky/app-circles.conf &
+
+
+
