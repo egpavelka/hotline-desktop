@@ -2,8 +2,8 @@
 # Any customization should be done in ~/.gtkrc-2.0.mine instead.
 
 include "/home/gigi/.gtkrc-2.0.mine"
-gtk-theme-name="Adwaita-dark"
-gtk-icon-theme-name="ACYLS"
+gtk-theme-name="Hotline-Flat"
+gtk-icon-theme-name="HighContrast"
 gtk-font-name="Hack 10"
 gtk-cursor-theme-name="Adwaita"
 gtk-cursor-theme-size=0
@@ -15,4 +15,4 @@ gtk-enable-event-sounds=0
 gtk-enable-input-feedback-sounds=0
 gtk-xft-antialias=1
 gtk-xft-hinting=1
-gtk-xft-hintstyle="hintmedium"
+gtk-xft-hintstyle="hintfull"

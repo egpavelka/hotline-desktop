@@ -29,7 +29,9 @@ cp $THEME/emacs/.emacs.d/{init.el,hotline.el,install-packages/} $HOME/.emacs.d/
 cp -r $THEME/emerald/hotline $HOME/.emerald/
 
 # GTK
-cp -r $THEME/gtk/* $HOME/.themes/
+cp -r $THEME/gtk/Hotline* $HOME/.themes/
+cp cp $THEME/gtk/settings.ini $HOME/.config/gtk-3.0/
+cp $THEME/gtk/.gtkrc-2.0 $HOME/
 
 # Midnight Commander
 # cp $THEME/midnight-commander/hotline.ini $HOME/.local/share/mc/skins/

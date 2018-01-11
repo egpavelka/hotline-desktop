@@ -51,3 +51,4 @@ cp $HOME/.config/terminator/config $DEST/terminator/
 # ALT: When XFCE breaks, use a standalone compiz session.
 cp $HOME/.compiz-session $DEST/
 
+cp -r $HOME/.config/cairo-dock/ $DEST/
