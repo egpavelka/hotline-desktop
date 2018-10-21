@@ -14,14 +14,14 @@ Container=_MainDock_
 sep_display=
 
 #s[Default] Launcher's name:
-Name=emacs
+Name=Vivaldi
 
 #S+[Default] Image's name or path:
-Icon=/home/gigi/.icons/ACYLS/scalable/apps/emacs-snapshot.svg
+Icon=/home/gigi/.icons/ACYLS/scalable/apps/www-browser.svg
 
 #s[Default] Command to launch on click:
 #{Example: nautilus --no-desktop, gedit, etc. You can even enter a shortkey, e.g. <Alt>F1, <Ctrl>c,  <Ctrl>v, etc}
-Exec=emacs
+Exec=vivaldi-snapshot
 
 
 #X[Extra parameters]

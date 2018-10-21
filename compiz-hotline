@@ -1,0 +1,26 @@
+#!/bin/bash
+THEME="$HOME/.custom-themes/compiz-hotline"
+
+sed -i -e 's/dotspacemacs-themes '\''(.*)/dotspacemacs-themes '\''(spacemacs-hotline)/' $HOME/.spacemacs &
+
+# Change gtk and icon themes 
+cp $THEME/.gtkrc-2.0.mine $HOME/ &
+sed -i -e 's/gtk-theme-name=.*/gtk-theme-name=Hotline-Flat/' $HOME/.config/gtk-3.0/settings.ini &
+sed -i -e 's/icon-theme-name=.*/icon-theme-name=HighContrast/' $HOME/.config/gtk-3.0/settings.ini &
+
+cp $THEME/x/.Xresources $HOME/ &
+cp $THEME/rofi/config $HOME/.config/rofi/ &
+cp $THEME/kitty/kitty.conf $HOME/.config/kitty/ &    
+
+light-locker &
+xbindkeys &
+feh --bg-scale /home/gigi/.backgrounds/hotline/retrofuturism.png &
+compiz &
+nm-applet &
+pa-applet &
+cairo-dock &
+conky &
+conky -c /home/gigi/.config/conky/app-circles.conf &
+
+
+
